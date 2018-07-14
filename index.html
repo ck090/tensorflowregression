@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"></script>
+    <script src="sketch.js"></script>
+    <style>
+      p { word-wrap: break-word; }
+    </style>
+  </head>
+  <body style="font-family: Inconsolata; font-weight: 20; background-color: rgb(100, 100, 100);">
+  <center>
+    <h1>Tensorflow.js Regression</h1>
+    Select the type of Regression function:
+    <select id="polynomialType">
+      <option value="Linear">Linear</option>
+      <option value="Binomial">Binomial</option>
+      <option value="Trinomial">Trinomial</option>
+    </select>
+    type of Learning:
+    <select id="learningType">
+        <option value="SGD">SGD</option>
+        <option value="Adam">ADAM</option>
+    </select>
+    <button type="button" onclick="changeCanvas()">Go</button><br><br>
+    <div id="p5Canvas" style="width: windowWidth; height: 690px;"></div>
+    <p style="color: papayawhip">Tap or Hold on the Canvas to draw...</p>
+    <footer>&copy; Copyright 2018 N.CHANDRA KANTH</footer>
+  </center>
+  </body>
+</html>
